@@ -11,6 +11,17 @@ require('./app/routers')(app, {});
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.listen(port, () => {
-  console.log('We are live on ' + port);
-});
+function stop() {
+//  app.close();
+};
+
+function start() {
+
+  app.listen(port, () => {
+    console.log('We are live on ' + port);
+  });
+
+};
+
+module.exports.start = start;
+module.exports.stop = stop;

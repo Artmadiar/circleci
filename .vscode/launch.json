@@ -7,6 +7,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "test",
+      "program": "${workspaceRoot}/test.js",
+      "cwd": "${workspaceRoot}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "start",
       "program": "${workspaceRoot}\\server.js",
       "cwd": "${workspaceRoot}"
